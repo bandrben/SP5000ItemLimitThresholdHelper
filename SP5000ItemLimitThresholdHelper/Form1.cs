@@ -923,7 +923,7 @@ namespace SP5000ItemLimitThresholdHelper
                         {
                             if (!folderPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
                             {
-                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                //tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
                                 continue;
                             }
                         }
@@ -931,7 +931,7 @@ namespace SP5000ItemLimitThresholdHelper
                         {
                             if (folderPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
                             {
-                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                //tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
                                 continue;
                             }
                         }
@@ -942,7 +942,7 @@ namespace SP5000ItemLimitThresholdHelper
                         {
                             if (!fullPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
                             {
-                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                //tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
                                 continue;
                             }
                         }
@@ -950,7 +950,7 @@ namespace SP5000ItemLimitThresholdHelper
                         {
                             if (fullPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
                             {
-                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                //tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
                                 continue;
                             }
                         }
