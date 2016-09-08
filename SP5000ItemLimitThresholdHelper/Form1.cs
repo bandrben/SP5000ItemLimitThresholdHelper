@@ -61,6 +61,20 @@ namespace SP5000ItemLimitThresholdHelper
 
         /// <summary>
         /// </summary>
+        private void btnSwapSourceDest_Click(object sender, EventArgs e)
+        {
+            var source = tbSourceList.Text;
+            var dest = tbDestList.Text;
+
+            tbSourceList.Text = dest;
+            tbDestList.Text = source;
+        }
+
+
+
+
+        /// <summary>
+        /// </summary>
         private ICredentials BuildCreds()
         {
             var userName = tbUsername.Text.Trim();
@@ -1265,6 +1279,7 @@ namespace SP5000ItemLimitThresholdHelper
         {
             System.Diagnostics.Process.Start("http://www.bandrsolutions.com/?utm_source=SP5000ItemLimitThresholdHelper&utm_medium=application&utm_campaign=SP5000ItemLimitThresholdHelper");
         }
+
 
 
     }
