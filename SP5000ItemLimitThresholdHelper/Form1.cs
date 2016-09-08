@@ -491,7 +491,7 @@ namespace SP5000ItemLimitThresholdHelper
             var numItemsToProc = GenUtil.SafeToInt(tbItemsToProcess.Text);
 
             // update rowlimit if # of items to process is less, no reason to get more items than needed
-            if (numItemsToProc < rowLimit) rowLimit = numItemsToProc;
+            if (numItemsToProc < rowLimit && numItemsToProc > 0) rowLimit = numItemsToProc;
 
             var siteUrl = tbSiteUrl.Text.Trim();
             var sourceListName = tbSourceList.Text.Trim();
