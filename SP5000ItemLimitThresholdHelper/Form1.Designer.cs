@@ -72,6 +72,10 @@
             this.imageBandRwait = new System.Windows.Forms.PictureBox();
             this.lblErrorFound = new System.Windows.Forms.Label();
             this.lblNoErrorFound = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbFilterServerRelPathInc = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbFilterServerRelPathExc = new System.Windows.Forms.TextBox();
             this.tb1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -187,6 +191,10 @@
             // 
             this.tabPage1.AutoScroll = true;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.label9);
+            this.tabPage1.Controls.Add(this.tbFilterServerRelPathExc);
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.tbFilterServerRelPathInc);
             this.tabPage1.Controls.Add(this.btnAbort);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label6);
@@ -270,6 +278,8 @@
             this.cbMoveCopyOverwrite.TabIndex = 24;
             this.cbMoveCopyOverwrite.Text = "Overwrite when Move/Copy";
             this.cbMoveCopyOverwrite.UseVisualStyleBackColor = true;
+            this.cbMoveCopyOverwrite.MouseEnter += new System.EventHandler(this.cbMoveCopyOverwrite_MouseEnter);
+            this.cbMoveCopyOverwrite.MouseLeave += new System.EventHandler(this.cbMoveCopyOverwrite_MouseLeave);
             // 
             // btnStartMain
             // 
@@ -534,6 +544,38 @@
             this.lblNoErrorFound.TabIndex = 502;
             this.lblNoErrorFound.Text = "NO ERRORS FOUND";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(332, 177);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(184, 13);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Server Relative Folder Path (Include):";
+            // 
+            // tbFilterServerRelPathInc
+            // 
+            this.tbFilterServerRelPathInc.Location = new System.Drawing.Point(335, 193);
+            this.tbFilterServerRelPathInc.Name = "tbFilterServerRelPathInc";
+            this.tbFilterServerRelPathInc.Size = new System.Drawing.Size(340, 20);
+            this.tbFilterServerRelPathInc.TabIndex = 30;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(332, 216);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(187, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Server Relative Folder Path (Exclude):";
+            // 
+            // tbFilterServerRelPathExc
+            // 
+            this.tbFilterServerRelPathExc.Location = new System.Drawing.Point(335, 232);
+            this.tbFilterServerRelPathExc.Name = "tbFilterServerRelPathExc";
+            this.tbFilterServerRelPathExc.Size = new System.Drawing.Size(340, 20);
+            this.tbFilterServerRelPathExc.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,12 +652,16 @@
         private System.Windows.Forms.ComboBox ddlActions;
         private System.Windows.Forms.Button btnStartMain;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox cbMoveCopyOverwrite;
         private System.Windows.Forms.TextBox tbItemIDsExclude;
         private System.Windows.Forms.TextBox tbItemIDsInclude;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAbort;
+        private System.Windows.Forms.CheckBox cbMoveCopyOverwrite;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox tbFilterServerRelPathExc;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbFilterServerRelPathInc;
     }
 }
 

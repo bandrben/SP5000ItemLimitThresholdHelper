@@ -474,7 +474,10 @@ namespace SP5000ItemLimitThresholdHelper
             BackgroundWorker bwAsync = sender as BackgroundWorker;
 
             var rowLimit = Convert.ToInt32(ConfigurationManager.AppSettings["rowLimit"]);
-            var loopKiller = GenUtil.SafeToInt(tbItemsToProcess.Text);
+            var numItemsToProc = GenUtil.SafeToInt(tbItemsToProcess.Text);
+
+            // update rowlimit if # of items to process is less, no reason to get more items than needed
+            if (numItemsToProc < rowLimit) rowLimit = numItemsToProc;
 
             var siteUrl = tbSiteUrl.Text.Trim();
             var sourceListName = tbSourceList.Text.Trim();
@@ -485,6 +488,9 @@ namespace SP5000ItemLimitThresholdHelper
             var fileIdsInclusive = ConvertToListOfInts(tbItemIDsInclude.Text.Trim());
             var fileIdsExclusive = ConvertToListOfInts(tbItemIDsExclude.Text.Trim());
 
+            var folderUrlIncl = tbFilterServerRelPathInc.Text.Trim().TrimEnd("/".ToCharArray());
+            var folderUrlExcl = tbFilterServerRelPathExc.Text.Trim().TrimEnd("/".ToCharArray());
+
             tcout("Site URL", siteUrl);
             tcout("Username", tbUsername.Text.Trim());
             tcout("Action", selAction);
@@ -493,9 +499,13 @@ namespace SP5000ItemLimitThresholdHelper
                 tcout("Destination List Name", destListName);
             if (!selAction.IsEqual("Delete Files"))
                 tcout("Overwrite", overwrite);
-            tcout("Simulate", simulate);
+            tcout("Number of items to process", numItemsToProc);
+            tcout("Query row limit batch size", rowLimit);
+            tcout("Simulate", simulate.ToString().ToUpper());
             tcout("Filter Item IDs Inclusive", fileIdsInclusive.Any() ? "Yes" : "No");
             tcout("Filter Item IDs Exclusive", fileIdsExclusive.Any() ? "Yes" : "No");
+            tcout("Server Relative Folder Path (Include)", folderUrlIncl);
+            tcout("Server Relative Folder Path (Exclude)", folderUrlExcl);
 
             if (siteUrl.IsNull())
             {
@@ -534,11 +544,11 @@ namespace SP5000ItemLimitThresholdHelper
 
                     if (selAction.IsEqual("Move Files") || selAction.IsEqual("Copy Files"))
                     {
-                        CopyMoveFiles(bwAsync, rowLimit, loopKiller, sourceListName, destListName, simulate, overwrite, fileIdsInclusive, fileIdsExclusive, ctx);
+                        CopyMoveFiles(bwAsync, rowLimit, numItemsToProc, sourceListName, destListName, simulate, overwrite, fileIdsInclusive, fileIdsExclusive, folderUrlIncl, folderUrlExcl, ctx);
                     }
                     else if (selAction.IsEqual("Delete Files"))
                     {
-                        DeleteFiles(bwAsync, rowLimit, loopKiller, sourceListName, destListName, simulate, overwrite, fileIdsInclusive, fileIdsExclusive, ctx);
+                        DeleteFiles(bwAsync, rowLimit, numItemsToProc, sourceListName, destListName, simulate, overwrite, fileIdsInclusive, fileIdsExclusive, folderUrlIncl, folderUrlExcl, ctx);
                     }
                     else
                     {
@@ -555,7 +565,7 @@ namespace SP5000ItemLimitThresholdHelper
 
         /// <summary>
         /// </summary>
-        private void DeleteFiles(BackgroundWorker bwAsync, int rowLimit, int loopKiller, string sourceListName, string destListName, bool simulate, bool overwrite, List<int> fileIdsInclusive, List<int> fileIdsExclusive, ClientContext ctx)
+        private void DeleteFiles(BackgroundWorker bwAsync, int rowLimit, int numItemsToProc, string sourceListName, string destListName, bool simulate, bool overwrite, List<int> fileIdsInclusive, List<int> fileIdsExclusive, string folderUrlIncl, string folderUrlExcl, ClientContext ctx)
         {
             int i = 0;
 
@@ -628,6 +638,45 @@ namespace SP5000ItemLimitThresholdHelper
                         continue;
                     }
 
+                    if (fso.ToString().IsEqual("FILE"))
+                    {
+                        if (!folderUrlIncl.IsNull())
+                        {
+                            if (!folderPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                        else if (!folderUrlExcl.IsNull())
+                        {
+                            if (folderPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                    }
+                    else if (fso.ToString().IsEqual("FOLDER"))
+                    {
+                        if (!folderUrlIncl.IsNull())
+                        {
+                            if (!fullPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                        else if (!folderUrlExcl.IsNull())
+                        {
+                            if (fullPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                    }
+
                     lstFileObjs.Add(new CustFileObj
                     {
                         fileId = fileId,
@@ -645,14 +694,14 @@ namespace SP5000ItemLimitThresholdHelper
                         return;
                     }
 
-                    if (loopKiller > 0 && i >= loopKiller)
+                    if (numItemsToProc > 0 && i >= numItemsToProc)
                     {
                         tcout("Search aborted, reached number of items found limit.");
                         break;
                     }
                 }
 
-                if (pos == null || (loopKiller > 0 && i >= loopKiller))
+                if (pos == null || (numItemsToProc > 0 && i >= numItemsToProc))
                     break;
                 else
                     tcout(string.Format("Objects found: {0}/{1}", lstFileObjs.Count, list.ItemCount));
@@ -767,7 +816,7 @@ namespace SP5000ItemLimitThresholdHelper
 
         /// <summary>
         /// </summary>
-        private void CopyMoveFiles(BackgroundWorker bwAsync, int rowLimit, int loopKiller, string sourceListName, string destListName, bool simulate, bool overwrite, List<int> fileIdsInclusive, List<int> fileIdsExclusive, ClientContext ctx)
+        private void CopyMoveFiles(BackgroundWorker bwAsync, int rowLimit, int numItemsToProc, string sourceListName, string destListName, bool simulate, bool overwrite, List<int> fileIdsInclusive, List<int> fileIdsExclusive, string folderUrlIncl, string folderUrlExcl, ClientContext ctx)
         {
             int i = 0;
             var isMove = selAction.IsEqual("Move Files");
@@ -854,6 +903,45 @@ namespace SP5000ItemLimitThresholdHelper
                         continue;
                     }
 
+                    if (fso.ToString().IsEqual("FILE"))
+                    {
+                        if (!folderUrlIncl.IsNull())
+                        {
+                            if (!folderPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                        else if (!folderUrlExcl.IsNull())
+                        {
+                            if (folderPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                    }
+                    else if (fso.ToString().IsEqual("FOLDER"))
+                    {
+                        if (!folderUrlIncl.IsNull())
+                        {
+                            if (!fullPath.StartsWith(folderUrlIncl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, not in folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                        else if (!folderUrlExcl.IsNull())
+                        {
+                            if (fullPath.StartsWith(folderUrlExcl, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                tcout(fileId, fullPath, string.Format("Skipping {0}, excluded folder path", fso.ToString()));
+                                continue;
+                            }
+                        }
+                    }
+
                     lstFileObjs.Add(new CustFileObj
                     {
                         fileId = fileId,
@@ -871,14 +959,14 @@ namespace SP5000ItemLimitThresholdHelper
                         return;
                     }
 
-                    if (loopKiller > 0 && i >= loopKiller)
+                    if (numItemsToProc > 0 && i >= numItemsToProc)
                     {
                         tcout("Search aborted, reached number of items found limit.");
                         break;
                     }
                 }
 
-                if (pos == null || (loopKiller > 0 && i >= loopKiller))
+                if (pos == null || (numItemsToProc > 0 && i >= numItemsToProc))
                     break;
                 else
                     tcout(string.Format("Objects found: {0}/{1}", lstFileObjs.Count, listSource.ItemCount));
@@ -1000,6 +1088,9 @@ namespace SP5000ItemLimitThresholdHelper
                                 {
                                     try
                                     {
+                                        var sw = new System.Diagnostics.Stopwatch();
+                                        sw.Start();
+
                                         if (!simulate)
                                         {
                                             var oldFile = ctx.Web.GetFileByServerRelativeUrl(oldFileServerRelUrl);
@@ -1016,7 +1107,9 @@ namespace SP5000ItemLimitThresholdHelper
                                             ctx.ExecuteQuery();
                                         }
 
-                                        tcout(" -- File " + (isMove ? "moved" : "copied") + "!");
+                                        sw.Stop();
+
+                                        tcout(" -- File " + (isMove ? "moved" : "copied") + "!" + string.Format(" ({0}s)", sw.Elapsed.TotalSeconds.ToString("##0.0##")));
                                     }
                                     catch (Exception ex)
                                     {
@@ -1034,6 +1127,9 @@ namespace SP5000ItemLimitThresholdHelper
                             // always copy/move file, overwrite on
                             try
                             {
+                                var sw = new System.Diagnostics.Stopwatch();
+                                sw.Start();
+
                                 if (!simulate)
                                 {
                                     var oldFile = ctx.Web.GetFileByServerRelativeUrl(oldFileServerRelUrl);
@@ -1050,7 +1146,9 @@ namespace SP5000ItemLimitThresholdHelper
                                     ctx.ExecuteQuery();
                                 }
 
-                                tcout(" -- File " + (isMove ? "moved" : "copied") + "!");
+                                sw.Stop();
+
+                                tcout(" -- File " + (isMove ? "moved" : "copied") + "!" + string.Format(" ({0}s)", sw.Elapsed.TotalSeconds.ToString("##0.0##")));
                             }
                             catch (Exception ex)
                             {
@@ -1134,6 +1232,15 @@ namespace SP5000ItemLimitThresholdHelper
             toolStripStatusLabel1.Text = "";
         }
 
+        private void cbMoveCopyOverwrite_MouseEnter(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "NOTE: When overwrite is unchecked an additional query is executed to check if file exists in destination.";
+        }
+
+        private void cbMoveCopyOverwrite_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
 
 
 
@@ -1158,6 +1265,7 @@ namespace SP5000ItemLimitThresholdHelper
         {
             System.Diagnostics.Process.Start("http://www.bandrsolutions.com/?utm_source=SP5000ItemLimitThresholdHelper&utm_medium=application&utm_campaign=SP5000ItemLimitThresholdHelper");
         }
+
 
     }
 }
