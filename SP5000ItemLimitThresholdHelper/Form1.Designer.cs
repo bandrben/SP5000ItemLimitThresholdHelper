@@ -40,6 +40,7 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnSwapSourceDest = new System.Windows.Forms.Button();
             this.btnAbort = new System.Windows.Forms.Button();
             this.cbMoveCopyOverwrite = new System.Windows.Forms.CheckBox();
             this.btnStartMain = new System.Windows.Forms.Button();
@@ -52,6 +53,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbDestList = new System.Windows.Forms.TextBox();
             this.tbSourceList = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbItemIDsInclude = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbItemIDsExclude = new System.Windows.Forms.TextBox();
+            this.tbFilterServerRelPathExc = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbFilterServerRelPathInc = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,24 +78,14 @@
             this.imageBandRwait = new System.Windows.Forms.PictureBox();
             this.lblErrorFound = new System.Windows.Forms.Label();
             this.lblNoErrorFound = new System.Windows.Forms.Label();
-            this.btnSwapSourceDest = new System.Windows.Forms.Button();
-            this.tbFilterServerRelPathInc = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbFilterServerRelPathExc = new System.Windows.Forms.TextBox();
-            this.tbItemIDsExclude = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbItemIDsInclude = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tb1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBandR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBandRwait)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb1
@@ -216,8 +216,19 @@
             this.tabPage1.Text = "Actions";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // btnSwapSourceDest
+            // 
+            this.btnSwapSourceDest.Location = new System.Drawing.Point(404, 60);
+            this.btnSwapSourceDest.Name = "btnSwapSourceDest";
+            this.btnSwapSourceDest.Size = new System.Drawing.Size(51, 23);
+            this.btnSwapSourceDest.TabIndex = 34;
+            this.btnSwapSourceDest.Text = "Swap";
+            this.btnSwapSourceDest.UseVisualStyleBackColor = false;
+            this.btnSwapSourceDest.Click += new System.EventHandler(this.btnSwapSourceDest_Click);
+            // 
             // btnAbort
             // 
+            this.btnAbort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnAbort.Location = new System.Drawing.Point(148, 143);
             this.btnAbort.Name = "btnAbort";
             this.btnAbort.Size = new System.Drawing.Size(120, 23);
@@ -240,6 +251,7 @@
             // 
             // btnStartMain
             // 
+            this.btnStartMain.ForeColor = System.Drawing.Color.Green;
             this.btnStartMain.Location = new System.Drawing.Point(148, 114);
             this.btnStartMain.Name = "btnStartMain";
             this.btnStartMain.Size = new System.Drawing.Size(120, 23);
@@ -331,6 +343,101 @@
             this.tbSourceList.Name = "tbSourceList";
             this.tbSourceList.Size = new System.Drawing.Size(250, 20);
             this.tbSourceList.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.tbItemIDsInclude);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.tbItemIDsExclude);
+            this.groupBox1.Controls.Add(this.tbFilterServerRelPathExc);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.tbFilterServerRelPathInc);
+            this.groupBox1.Location = new System.Drawing.Point(12, 172);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(880, 262);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Filters";
+            // 
+            // tbItemIDsInclude
+            // 
+            this.tbItemIDsInclude.Location = new System.Drawing.Point(135, 19);
+            this.tbItemIDsInclude.Multiline = true;
+            this.tbItemIDsInclude.Name = "tbItemIDsInclude";
+            this.tbItemIDsInclude.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbItemIDsInclude.Size = new System.Drawing.Size(161, 110);
+            this.tbItemIDsInclude.TabIndex = 25;
+            this.tbItemIDsInclude.MouseEnter += new System.EventHandler(this.tbItemIDsInclude_MouseEnter);
+            this.tbItemIDsInclude.MouseLeave += new System.EventHandler(this.tbItemIDsInclude_MouseLeave);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(319, 58);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(187, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Server Relative Folder Path (Exclude):";
+            // 
+            // tbItemIDsExclude
+            // 
+            this.tbItemIDsExclude.Location = new System.Drawing.Point(135, 135);
+            this.tbItemIDsExclude.Multiline = true;
+            this.tbItemIDsExclude.Name = "tbItemIDsExclude";
+            this.tbItemIDsExclude.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbItemIDsExclude.Size = new System.Drawing.Size(161, 110);
+            this.tbItemIDsExclude.TabIndex = 26;
+            this.tbItemIDsExclude.MouseEnter += new System.EventHandler(this.tbItemIDsExclude_MouseEnter);
+            this.tbItemIDsExclude.MouseLeave += new System.EventHandler(this.tbItemIDsExclude_MouseLeave);
+            // 
+            // tbFilterServerRelPathExc
+            // 
+            this.tbFilterServerRelPathExc.Location = new System.Drawing.Point(322, 74);
+            this.tbFilterServerRelPathExc.Name = "tbFilterServerRelPathExc";
+            this.tbFilterServerRelPathExc.Size = new System.Drawing.Size(250, 20);
+            this.tbFilterServerRelPathExc.TabIndex = 32;
+            this.tbFilterServerRelPathExc.MouseEnter += new System.EventHandler(this.tbFilterServerRelPathExc_MouseEnter);
+            this.tbFilterServerRelPathExc.MouseLeave += new System.EventHandler(this.tbFilterServerRelPathExc_MouseLeave);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 22);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Item IDs Inclusive:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(319, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(184, 13);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Server Relative Folder Path (Include):";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 138);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(97, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "Item IDs Exclusive:";
+            // 
+            // tbFilterServerRelPathInc
+            // 
+            this.tbFilterServerRelPathInc.Location = new System.Drawing.Point(322, 35);
+            this.tbFilterServerRelPathInc.Name = "tbFilterServerRelPathInc";
+            this.tbFilterServerRelPathInc.Size = new System.Drawing.Size(250, 20);
+            this.tbFilterServerRelPathInc.TabIndex = 30;
+            this.tbFilterServerRelPathInc.MouseEnter += new System.EventHandler(this.tbFilterServerRelPathInc_MouseEnter);
+            this.tbFilterServerRelPathInc.MouseLeave += new System.EventHandler(this.tbFilterServerRelPathInc_MouseLeave);
             // 
             // menuStrip1
             // 
@@ -501,107 +608,6 @@
             this.lblNoErrorFound.TabIndex = 502;
             this.lblNoErrorFound.Text = "NO ERRORS FOUND";
             // 
-            // btnSwapSourceDest
-            // 
-            this.btnSwapSourceDest.Location = new System.Drawing.Point(404, 60);
-            this.btnSwapSourceDest.Name = "btnSwapSourceDest";
-            this.btnSwapSourceDest.Size = new System.Drawing.Size(51, 23);
-            this.btnSwapSourceDest.TabIndex = 34;
-            this.btnSwapSourceDest.Text = "Swap";
-            this.btnSwapSourceDest.UseVisualStyleBackColor = false;
-            this.btnSwapSourceDest.Click += new System.EventHandler(this.btnSwapSourceDest_Click);
-            // 
-            // tbFilterServerRelPathInc
-            // 
-            this.tbFilterServerRelPathInc.Location = new System.Drawing.Point(322, 35);
-            this.tbFilterServerRelPathInc.Name = "tbFilterServerRelPathInc";
-            this.tbFilterServerRelPathInc.Size = new System.Drawing.Size(250, 20);
-            this.tbFilterServerRelPathInc.TabIndex = 30;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 138);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(97, 13);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "Item IDs Exclusive:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(319, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 13);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Server Relative Folder Path (Include):";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 22);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Item IDs Inclusive:";
-            // 
-            // tbFilterServerRelPathExc
-            // 
-            this.tbFilterServerRelPathExc.Location = new System.Drawing.Point(322, 74);
-            this.tbFilterServerRelPathExc.Name = "tbFilterServerRelPathExc";
-            this.tbFilterServerRelPathExc.Size = new System.Drawing.Size(250, 20);
-            this.tbFilterServerRelPathExc.TabIndex = 32;
-            // 
-            // tbItemIDsExclude
-            // 
-            this.tbItemIDsExclude.Location = new System.Drawing.Point(135, 135);
-            this.tbItemIDsExclude.Multiline = true;
-            this.tbItemIDsExclude.Name = "tbItemIDsExclude";
-            this.tbItemIDsExclude.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbItemIDsExclude.Size = new System.Drawing.Size(161, 110);
-            this.tbItemIDsExclude.TabIndex = 26;
-            this.tbItemIDsExclude.MouseEnter += new System.EventHandler(this.tbItemIDsExclude_MouseEnter);
-            this.tbItemIDsExclude.MouseLeave += new System.EventHandler(this.tbItemIDsExclude_MouseLeave);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(319, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(187, 13);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Server Relative Folder Path (Exclude):";
-            // 
-            // tbItemIDsInclude
-            // 
-            this.tbItemIDsInclude.Location = new System.Drawing.Point(135, 19);
-            this.tbItemIDsInclude.Multiline = true;
-            this.tbItemIDsInclude.Name = "tbItemIDsInclude";
-            this.tbItemIDsInclude.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbItemIDsInclude.Size = new System.Drawing.Size(161, 110);
-            this.tbItemIDsInclude.TabIndex = 25;
-            this.tbItemIDsInclude.MouseEnter += new System.EventHandler(this.tbItemIDsInclude_MouseEnter);
-            this.tbItemIDsInclude.MouseLeave += new System.EventHandler(this.tbItemIDsInclude_MouseLeave);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.tbItemIDsInclude);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.tbItemIDsExclude);
-            this.groupBox1.Controls.Add(this.tbFilterServerRelPathExc);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.tbFilterServerRelPathInc);
-            this.groupBox1.Location = new System.Drawing.Point(12, 172);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(880, 262);
-            this.groupBox1.TabIndex = 35;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Filters";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -628,14 +634,14 @@
             this.tabPage2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBandR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBandRwait)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
