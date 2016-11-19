@@ -1296,7 +1296,7 @@ namespace SP5000ItemLimitThresholdHelper
 
         private void tbFilterServerRelPathInc_MouseEnter(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "Folder path should not contain URL encoded chars, ex. '/sites/site1/shared%20docs' should be '/sites/site1/shared docs'.";
+            toolStripStatusLabel1.Text = "";
         }
 
         private void tbFilterServerRelPathInc_MouseLeave(object sender, EventArgs e)
