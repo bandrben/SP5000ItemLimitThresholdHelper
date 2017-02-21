@@ -1,0 +1,512 @@
+2:48:42 PM: Site URL: https://pecorep.sharepoint.com/sites/FilingCabinet
+2:48:42 PM: Username: BSteinhauser@pecorep.onmicrosoft.com
+2:48:42 PM: Action: Move Files
+2:48:42 PM: Source List Name: DropOff
+2:48:42 PM: Destination List Name: Accounting
+2:48:42 PM: Overwrite: False
+2:48:42 PM: Number of items to process: 0
+2:48:42 PM: Query row limit batch size: 5000
+2:48:42 PM: Simulate: FALSE
+2:48:42 PM: Filter Item IDs Inclusive: No
+2:48:42 PM: Filter Item IDs Exclusive: No
+2:48:42 PM: Server Relative Folder Path (Include): 
+2:48:42 PM: Server Relative Folder Path (Exclude): 
+2:48:45 PM: Site loaded: Filing Cabinet
+2:48:45 PM: Loading Source List...
+2:48:45 PM: Source List found: /sites/FilingCabinet/DropOff: Item Count: 242
+2:48:45 PM: Loading Destination List...
+2:48:46 PM: Destination List found: /sites/FilingCabinet/Accounting: Item Count: 209
+2:48:46 PM: Begin finding folders/files...
+2:48:46 PM: Execute paged query, pagesize=5000, progress=0%
+2:48:47 PM: Finished finding folders/files.
+2:48:47 PM: Total item count: 242
+2:48:47 PM: Folder count: 0
+2:48:47 PM: File count: 242
+2:48:47 PM: Begin move files to destination...
+2:48:47 PM: 1/242 - 0.41%: Move: /sites/FilingCabinet/DropOff/17259.pdf
+2:48:47 PM:  -- File moved! (0.35s)
+2:48:47 PM: 2/242 - 0.83%: Move: /sites/FilingCabinet/DropOff/17262.pdf
+2:48:48 PM:  -- File moved! (0.37s)
+2:48:48 PM: 3/242 - 1.24%: Move: /sites/FilingCabinet/DropOff/17265.pdf
+2:48:48 PM:  -- File moved! (0.35s)
+2:48:48 PM: 4/242 - 1.65%: Move: /sites/FilingCabinet/DropOff/17271.pdf
+2:48:49 PM:  -- File moved! (0.36s)
+2:48:49 PM: 5/242 - 2.07%: Move: /sites/FilingCabinet/DropOff/17405.pdf
+2:48:49 PM:  -- File moved! (0.34s)
+2:48:49 PM: 6/242 - 2.48%: Move: /sites/FilingCabinet/DropOff/17422.bmp
+2:48:50 PM:  -- File moved! (0.44s)
+2:48:50 PM: 7/242 - 2.89%: Move: /sites/FilingCabinet/DropOff/17438.pdf
+2:48:51 PM:  -- File moved! (0.38s)
+2:48:51 PM: 8/242 - 3.31%: Move: /sites/FilingCabinet/DropOff/20195.pdf
+2:48:51 PM:  -- File moved! (0.34s)
+2:48:51 PM: 9/242 - 3.72%: Move: /sites/FilingCabinet/DropOff/20196.pdf
+2:48:52 PM:  -- File moved! (0.38s)
+2:48:52 PM: 10/242 - 4.13%: Move: /sites/FilingCabinet/DropOff/20745.pdf
+2:48:52 PM:  -- File moved! (0.33s)
+2:48:52 PM: 11/242 - 4.55%: Move: /sites/FilingCabinet/DropOff/20746.pdf
+2:48:53 PM:  -- File moved! (0.64s)
+2:48:53 PM: 12/242 - 4.96%: Move: /sites/FilingCabinet/DropOff/21294.pdf
+2:48:53 PM:  -- File moved! (0.36s)
+2:48:53 PM: 13/242 - 5.37%: Move: /sites/FilingCabinet/DropOff/21309.pdf
+2:48:54 PM:  -- File moved! (0.34s)
+2:48:54 PM: 14/242 - 5.79%: Move: /sites/FilingCabinet/DropOff/21310.pdf
+2:48:55 PM:  -- File moved! (0.65s)
+2:48:55 PM: 15/242 - 6.2%: Move: /sites/FilingCabinet/DropOff/21342.pdf
+2:48:55 PM:  -- File moved! (0.37s)
+2:48:55 PM: 16/242 - 6.61%: Move: /sites/FilingCabinet/DropOff/21440.pdf
+2:48:56 PM:  -- File moved! (0.33s)
+2:48:56 PM: 17/242 - 7.02%: Move: /sites/FilingCabinet/DropOff/21576.pdf
+2:48:57 PM:  -- File moved! (0.49s)
+2:48:57 PM: 18/242 - 7.44%: Move: /sites/FilingCabinet/DropOff/21712.pdf
+2:48:58 PM:  -- File moved! (1.62s)
+2:48:58 PM: 19/242 - 7.85%: Move: /sites/FilingCabinet/DropOff/21713.pdf
+2:48:59 PM:  -- File moved! (0.36s)
+2:48:59 PM: 20/242 - 8.26%: Move: /sites/FilingCabinet/DropOff/21714.pdf
+2:48:59 PM:  -- File moved! (0.35s)
+2:48:59 PM: 21/242 - 8.68%: Move: /sites/FilingCabinet/DropOff/21717.pdf
+2:49:00 PM:  -- File moved! (0.38s)
+2:49:00 PM: 22/242 - 9.09%: Move: /sites/FilingCabinet/DropOff/22012.pdf
+2:49:01 PM:  -- File moved! (0.63s)
+2:49:01 PM: 23/242 - 9.5%: Move: /sites/FilingCabinet/DropOff/22016.pdf
+2:49:01 PM:  -- File moved! (0.33s)
+2:49:01 PM: 24/242 - 9.92%: Move: /sites/FilingCabinet/DropOff/22084.pdf
+2:49:02 PM:  -- File moved! (0.44s)
+2:49:02 PM: 25/242 - 10.33%: Move: /sites/FilingCabinet/DropOff/22131.pdf
+2:49:02 PM:  -- File moved! (0.34s)
+2:49:02 PM: 26/242 - 10.74%: Move: /sites/FilingCabinet/DropOff/22133.pdf
+2:49:03 PM:  -- File moved! (0.48s)
+2:49:03 PM: 27/242 - 11.16%: Move: /sites/FilingCabinet/DropOff/22214.pdf
+2:49:04 PM:  -- File moved! (0.37s)
+2:49:04 PM: 28/242 - 11.57%: Move: /sites/FilingCabinet/DropOff/22316.pdf
+2:49:04 PM:  -- File moved! (0.33s)
+2:49:04 PM: 29/242 - 11.98%: Move: /sites/FilingCabinet/DropOff/22493.pdf
+2:49:05 PM:  -- File moved! (0.45s)
+2:49:05 PM: 30/242 - 12.4%: Move: /sites/FilingCabinet/DropOff/22503.pdf
+2:49:05 PM:  -- File moved! (0.43s)
+2:49:05 PM: 31/242 - 12.81%: Move: /sites/FilingCabinet/DropOff/22504.bmp
+2:49:06 PM:  -- File moved! (0.49s)
+2:49:06 PM: 32/242 - 13.22%: Move: /sites/FilingCabinet/DropOff/22504.pdf
+2:49:07 PM:  -- File moved! (0.43s)
+2:49:07 PM: 33/242 - 13.64%: Move: /sites/FilingCabinet/DropOff/22505.pdf
+2:49:07 PM:  -- File moved! (0.56s)
+2:49:07 PM: 34/242 - 14.05%: Move: /sites/FilingCabinet/DropOff/22552.pdf
+2:49:08 PM:  -- File moved! (0.35s)
+2:49:08 PM: 35/242 - 14.46%: Move: /sites/FilingCabinet/DropOff/22553.pdf
+2:49:08 PM:  -- File moved! (0.43s)
+2:49:08 PM: 36/242 - 14.88%: Move: /sites/FilingCabinet/DropOff/22634.pdf
+2:49:09 PM:  -- File moved! (0.41s)
+2:49:09 PM: 37/242 - 15.29%: Move: /sites/FilingCabinet/DropOff/22680.pdf
+2:49:10 PM:  -- File moved! (0.37s)
+2:49:10 PM: 38/242 - 15.7%: Move: /sites/FilingCabinet/DropOff/22860.pdf
+2:49:11 PM:  -- File moved! (1.04s)
+2:49:11 PM: 39/242 - 16.12%: Move: /sites/FilingCabinet/DropOff/23091.pdf
+2:49:11 PM:  -- File moved! (0.37s)
+2:49:11 PM: 40/242 - 16.53%: Move: /sites/FilingCabinet/DropOff/23093.pdf
+2:49:12 PM:  -- File moved! (0.37s)
+2:49:12 PM: 41/242 - 16.94%: Move: /sites/FilingCabinet/DropOff/23274.pdf
+2:49:12 PM:  -- File moved! (0.33s)
+2:49:12 PM: 42/242 - 17.36%: Move: /sites/FilingCabinet/DropOff/23308.pdf
+2:49:13 PM:  -- File moved! (0.33s)
+2:49:13 PM: 43/242 - 17.77%: Move: /sites/FilingCabinet/DropOff/23309.pdf
+2:49:14 PM:  -- File moved! (0.35s)
+2:49:14 PM: 44/242 - 18.18%: Move: /sites/FilingCabinet/DropOff/23391.pdf
+2:49:14 PM:  -- File moved! (0.33s)
+2:49:14 PM: 45/242 - 18.6%: Move: /sites/FilingCabinet/DropOff/23470.pdf
+2:49:15 PM:  -- File moved! (0.34s)
+2:49:15 PM: 46/242 - 19.01%: Move: /sites/FilingCabinet/DropOff/23580.pdf
+2:49:15 PM:  -- File moved! (0.37s)
+2:49:15 PM: 47/242 - 19.42%: Move: /sites/FilingCabinet/DropOff/23653.pdf
+2:49:16 PM:  -- File moved! (0.31s)
+2:49:16 PM: 48/242 - 19.83%: Move: /sites/FilingCabinet/DropOff/23660.pdf
+2:49:16 PM:  -- File moved! (0.33s)
+2:49:16 PM: 49/242 - 20.25%: Move: /sites/FilingCabinet/DropOff/23706.pdf
+2:49:17 PM:  -- File moved! (0.55s)
+2:49:17 PM: 50/242 - 20.66%: Move: /sites/FilingCabinet/DropOff/27287.pdf
+2:49:18 PM:  -- File moved! (0.51s)
+2:49:18 PM: 51/242 - 21.07%: Move: /sites/FilingCabinet/DropOff/27288.pdf
+2:49:18 PM:  -- File moved! (0.63s)
+2:49:18 PM: 52/242 - 21.49%: Move: /sites/FilingCabinet/DropOff/27307.pdf
+2:49:19 PM:  -- File moved! (0.32s)
+2:49:19 PM: 53/242 - 21.9%: Move: /sites/FilingCabinet/DropOff/27308.pdf
+2:49:19 PM:  -- File moved! (0.35s)
+2:49:19 PM: 54/242 - 22.31%: Move: /sites/FilingCabinet/DropOff/27634.pdf
+2:49:20 PM:  -- File moved! (0.36s)
+2:49:20 PM: 55/242 - 22.73%: Move: /sites/FilingCabinet/DropOff/27688.pdf
+2:49:21 PM:  -- File moved! (0.34s)
+2:49:21 PM: 56/242 - 23.14%: Move: /sites/FilingCabinet/DropOff/27690.pdf
+2:49:21 PM:  -- File moved! (0.34s)
+2:49:21 PM: 57/242 - 23.55%: Move: /sites/FilingCabinet/DropOff/27699.pdf
+2:49:22 PM:  -- File moved! (0.38s)
+2:49:22 PM: 58/242 - 23.97%: Move: /sites/FilingCabinet/DropOff/27906.pdf
+2:49:22 PM:  -- File moved! (0.41s)
+2:49:22 PM: 59/242 - 24.38%: Move: /sites/FilingCabinet/DropOff/28043.pdf
+2:49:23 PM:  -- File moved! (0.35s)
+2:49:23 PM: 60/242 - 24.79%: Move: /sites/FilingCabinet/DropOff/28044.pdf
+2:49:23 PM:  -- File moved! (0.53s)
+2:49:23 PM: 61/242 - 25.21%: Move: /sites/FilingCabinet/DropOff/28046.pdf
+2:49:24 PM:  -- File moved! (0.48s)
+2:49:24 PM: 62/242 - 25.62%: Move: /sites/FilingCabinet/DropOff/28330.pdf
+2:49:25 PM:  -- File moved! (0.36s)
+2:49:25 PM: 63/242 - 26.03%: Move: /sites/FilingCabinet/DropOff/28332.pdf
+2:49:26 PM:  -- File moved! (1s)
+2:49:26 PM: 64/242 - 26.45%: Move: /sites/FilingCabinet/DropOff/28580.pdf
+2:49:26 PM:  -- File moved! (0.52s)
+2:49:26 PM: 65/242 - 26.86%: Move: /sites/FilingCabinet/DropOff/28645.pdf
+2:49:27 PM:  -- File moved! (0.67s)
+2:49:27 PM: 66/242 - 27.27%: Move: /sites/FilingCabinet/DropOff/28866.pdf
+2:49:28 PM:  -- File moved! (0.33s)
+2:49:28 PM: 67/242 - 27.69%: Move: /sites/FilingCabinet/DropOff/28867.pdf
+2:49:28 PM:  -- File moved! (0.5s)
+2:49:28 PM: 68/242 - 28.1%: Move: /sites/FilingCabinet/DropOff/28869.pdf
+2:49:29 PM:  -- File moved! (0.5s)
+2:49:29 PM: 69/242 - 28.51%: Move: /sites/FilingCabinet/DropOff/28870.pdf
+2:49:30 PM:  -- File moved! (0.78s)
+2:49:30 PM: 70/242 - 28.93%: Move: /sites/FilingCabinet/DropOff/28919.pdf
+2:49:31 PM:  -- File moved! (0.5s)
+2:49:31 PM: 71/242 - 29.34%: Move: /sites/FilingCabinet/DropOff/28920.pdf
+2:49:31 PM:  -- File moved! (0.55s)
+2:49:31 PM: 72/242 - 29.75%: Move: /sites/FilingCabinet/DropOff/29164.pdf
+2:49:32 PM:  -- File moved! (0.47s)
+2:49:32 PM: 73/242 - 30.17%: Move: /sites/FilingCabinet/DropOff/29242.pdf
+2:49:33 PM:  -- File moved! (0.39s)
+2:49:33 PM: 74/242 - 30.58%: Move: /sites/FilingCabinet/DropOff/29293.pdf
+2:49:33 PM:  -- File moved! (0.32s)
+2:49:33 PM: 75/242 - 30.99%: Move: /sites/FilingCabinet/DropOff/29435.pdf
+2:49:34 PM:  -- File moved! (0.43s)
+2:49:34 PM: 76/242 - 31.4%: Move: /sites/FilingCabinet/DropOff/29552.pdf
+2:49:34 PM:  -- File moved! (0.49s)
+2:49:34 PM: 77/242 - 31.82%: Move: /sites/FilingCabinet/DropOff/29555.pdf
+2:49:35 PM:  -- File moved! (0.5s)
+2:49:35 PM: 78/242 - 32.23%: Move: /sites/FilingCabinet/DropOff/29557.pdf
+2:49:36 PM:  -- File moved! (0.48s)
+2:49:36 PM: 79/242 - 32.64%: Move: /sites/FilingCabinet/DropOff/29560.pdf
+2:49:36 PM:  -- File moved! (0.5s)
+2:49:36 PM: 80/242 - 33.06%: Move: /sites/FilingCabinet/DropOff/29561.pdf
+2:49:37 PM:  -- File moved! (0.64s)
+2:49:37 PM: 81/242 - 33.47%: Move: /sites/FilingCabinet/DropOff/29585.pdf
+2:49:38 PM:  -- File moved! (0.43s)
+2:49:38 PM: 82/242 - 33.88%: Move: /sites/FilingCabinet/DropOff/29634.pdf
+2:49:38 PM:  -- File moved! (0.41s)
+2:49:38 PM: 83/242 - 34.3%: Move: /sites/FilingCabinet/DropOff/29640.pdf
+2:49:39 PM:  -- File moved! (0.32s)
+2:49:39 PM: 84/242 - 34.71%: Move: /sites/FilingCabinet/DropOff/29855.pdf
+2:49:39 PM:  -- File moved! (0.32s)
+2:49:39 PM: 85/242 - 35.12%: Move: /sites/FilingCabinet/DropOff/29856.pdf
+2:49:40 PM:  -- File moved! (0.43s)
+2:49:40 PM: 86/242 - 35.54%: Move: /sites/FilingCabinet/DropOff/29933.pdf
+2:49:41 PM:  -- File moved! (0.49s)
+2:49:41 PM: 87/242 - 35.95%: Move: /sites/FilingCabinet/DropOff/29934.pdf
+2:49:41 PM:  -- File moved! (0.49s)
+2:49:41 PM: 88/242 - 36.36%: Move: /sites/FilingCabinet/DropOff/29935.pdf
+2:49:42 PM:  -- File moved! (0.47s)
+2:49:42 PM: 89/242 - 36.78%: Move: /sites/FilingCabinet/DropOff/29938.pdf
+2:49:43 PM:  -- File moved! (0.51s)
+2:49:43 PM: 90/242 - 37.19%: Move: /sites/FilingCabinet/DropOff/30111.pdf
+2:49:43 PM:  -- File moved! (0.41s)
+2:49:43 PM: 91/242 - 37.6%: Move: /sites/FilingCabinet/DropOff/30227.pdf
+2:49:44 PM:  -- File moved! (0.33s)
+2:49:44 PM: 92/242 - 38.02%: Move: /sites/FilingCabinet/DropOff/30234.pdf
+2:49:44 PM:  -- File moved! (0.35s)
+2:49:44 PM: 93/242 - 38.43%: Move: /sites/FilingCabinet/DropOff/30284.pdf
+2:49:45 PM:  -- File moved! (0.53s)
+2:49:45 PM: 94/242 - 38.84%: Move: /sites/FilingCabinet/DropOff/30285.pdf
+2:49:46 PM:  -- File moved! (0.52s)
+2:49:46 PM: 95/242 - 39.26%: Move: /sites/FilingCabinet/DropOff/30822.pdf
+2:49:46 PM:  -- File moved! (0.48s)
+2:49:46 PM: 96/242 - 39.67%: Move: /sites/FilingCabinet/DropOff/31170.pdf
+2:49:47 PM:  -- File moved! (0.49s)
+2:49:47 PM: 97/242 - 40.08%: Move: /sites/FilingCabinet/DropOff/31196.pdf
+2:49:48 PM:  -- File moved! (0.5s)
+2:49:48 PM: 98/242 - 40.5%: Move: /sites/FilingCabinet/DropOff/31201.pdf
+2:49:48 PM:  -- File moved! (0.65s)
+2:49:48 PM: 99/242 - 40.91%: Move: /sites/FilingCabinet/DropOff/31598.pdf
+2:49:49 PM:  -- File moved! (0.5s)
+2:49:49 PM: 100/242 - 41.32%: Move: /sites/FilingCabinet/DropOff/31745.pdf
+2:49:50 PM:  -- File moved! (0.49s)
+2:49:50 PM: 101/242 - 41.74%: Move: /sites/FilingCabinet/DropOff/31913.pdf
+2:49:51 PM:  -- File moved! (0.5s)
+2:49:51 PM: 102/242 - 42.15%: Move: /sites/FilingCabinet/DropOff/31914.pdf
+2:49:51 PM:  -- File moved! (0.48s)
+2:49:51 PM: 103/242 - 42.56%: Move: /sites/FilingCabinet/DropOff/31920.pdf
+2:49:52 PM:  -- File moved! (0.49s)
+2:49:52 PM: 104/242 - 42.98%: Move: /sites/FilingCabinet/DropOff/31921.pdf
+2:49:53 PM:  -- File moved! (0.54s)
+2:49:53 PM: 105/242 - 43.39%: Move: /sites/FilingCabinet/DropOff/32037.pdf
+2:49:53 PM:  -- File moved! (0.51s)
+2:49:53 PM: 106/242 - 43.8%: Move: /sites/FilingCabinet/DropOff/32038.pdf
+2:49:54 PM:  -- File moved! (0.47s)
+2:49:54 PM: 107/242 - 44.21%: Move: /sites/FilingCabinet/DropOff/32472.pdf
+2:49:55 PM:  -- File moved! (0.5s)
+2:49:55 PM: 108/242 - 44.63%: Move: /sites/FilingCabinet/DropOff/32480.pdf
+2:49:55 PM:  -- File moved! (0.52s)
+2:49:55 PM: 109/242 - 45.04%: Move: /sites/FilingCabinet/DropOff/32485.pdf
+2:49:56 PM:  -- File moved! (0.7s)
+2:49:56 PM: 110/242 - 45.45%: Move: /sites/FilingCabinet/DropOff/32487.pdf
+2:49:57 PM:  -- File moved! (0.5s)
+2:49:57 PM: 111/242 - 45.87%: Move: /sites/FilingCabinet/DropOff/32489.pdf
+2:49:58 PM:  -- File moved! (0.5s)
+2:49:58 PM: 112/242 - 46.28%: Move: /sites/FilingCabinet/DropOff/32505.pdf
+2:49:58 PM:  -- File moved! (0.56s)
+2:49:58 PM: 113/242 - 46.69%: Move: /sites/FilingCabinet/DropOff/32506.pdf
+2:49:59 PM:  -- File moved! (0.44s)
+2:49:59 PM: 114/242 - 47.11%: Move: /sites/FilingCabinet/DropOff/32568.pdf
+2:50:00 PM:  -- File moved! (0.49s)
+2:50:00 PM: 115/242 - 47.52%: Move: /sites/FilingCabinet/DropOff/32569.pdf
+2:50:00 PM:  -- File moved! (0.49s)
+2:50:00 PM: 116/242 - 47.93%: Move: /sites/FilingCabinet/DropOff/32696.pdf
+2:50:01 PM:  -- File moved! (0.42s)
+2:50:01 PM: 117/242 - 48.35%: Move: /sites/FilingCabinet/DropOff/32701.pdf
+2:50:01 PM:  -- File moved! (0.43s)
+2:50:01 PM: 118/242 - 48.76%: Move: /sites/FilingCabinet/DropOff/32715.pdf
+2:50:02 PM:  -- File moved! (0.44s)
+2:50:02 PM: 119/242 - 49.17%: Move: /sites/FilingCabinet/DropOff/32719.pdf
+2:50:03 PM:  -- File moved! (0.52s)
+2:50:03 PM: 120/242 - 49.59%: Move: /sites/FilingCabinet/DropOff/32803.pdf
+2:50:04 PM:  -- File moved! (0.73s)
+2:50:04 PM: 121/242 - 50%: Move: /sites/FilingCabinet/DropOff/32821.pdf
+2:50:04 PM:  -- File moved! (0.34s)
+2:50:04 PM: 122/242 - 50.41%: Move: /sites/FilingCabinet/DropOff/32830.pdf
+2:50:05 PM:  -- File moved! (0.47s)
+2:50:05 PM: 123/242 - 50.83%: Move: /sites/FilingCabinet/DropOff/32838.pdf
+2:50:06 PM:  -- File moved! (0.5s)
+2:50:06 PM: 124/242 - 51.24%: Move: /sites/FilingCabinet/DropOff/32839.pdf
+2:50:06 PM:  -- File moved! (0.58s)
+2:50:06 PM: 125/242 - 51.65%: Move: /sites/FilingCabinet/DropOff/32840.pdf
+2:50:07 PM:  -- File moved! (0.79s)
+2:50:07 PM: 126/242 - 52.07%: Move: /sites/FilingCabinet/DropOff/32841.pdf
+2:50:08 PM:  -- File moved! (0.54s)
+2:50:08 PM: 127/242 - 52.48%: Move: /sites/FilingCabinet/DropOff/32918.pdf
+2:50:09 PM:  -- File moved! (0.33s)
+2:50:09 PM: 128/242 - 52.89%: Move: /sites/FilingCabinet/DropOff/32933.pdf
+2:50:09 PM:  -- File moved! (0.36s)
+2:50:09 PM: 129/242 - 53.31%: Move: /sites/FilingCabinet/DropOff/32935.pdf
+2:50:10 PM:  -- File moved! (0.4s)
+2:50:10 PM: 130/242 - 53.72%: Move: /sites/FilingCabinet/DropOff/32958.pdf
+2:50:10 PM:  -- File moved! (0.39s)
+2:50:10 PM: 131/242 - 54.13%: Move: /sites/FilingCabinet/DropOff/32960.pdf
+2:50:11 PM:  -- File moved! (0.36s)
+2:50:11 PM: 132/242 - 54.55%: Move: /sites/FilingCabinet/DropOff/32981.pdf
+2:50:11 PM:  -- File moved! (0.35s)
+2:50:11 PM: 133/242 - 54.96%: Move: /sites/FilingCabinet/DropOff/32982.pdf
+2:50:12 PM:  -- File moved! (0.36s)
+2:50:12 PM: 134/242 - 55.37%: Move: /sites/FilingCabinet/DropOff/32985.pdf
+2:50:12 PM:  -- File moved! (0.43s)
+2:50:12 PM: 135/242 - 55.79%: Move: /sites/FilingCabinet/DropOff/33000.pdf
+2:50:13 PM:  -- File moved! (0.41s)
+2:50:13 PM: 136/242 - 56.2%: Move: /sites/FilingCabinet/DropOff/33216.pdf
+2:50:14 PM:  -- File moved! (0.32s)
+2:50:14 PM: 137/242 - 56.61%: Move: /sites/FilingCabinet/DropOff/33217.pdf
+2:50:14 PM:  -- File moved! (0.35s)
+2:50:14 PM: 138/242 - 57.02%: Move: /sites/FilingCabinet/DropOff/33218.pdf
+2:50:15 PM:  -- File moved! (0.34s)
+2:50:15 PM: 139/242 - 57.44%: Move: /sites/FilingCabinet/DropOff/33219.pdf
+2:50:15 PM:  -- File moved! (0.41s)
+2:50:15 PM: 140/242 - 57.85%: Move: /sites/FilingCabinet/DropOff/33260.pdf
+2:50:16 PM:  -- File moved! (0.35s)
+2:50:16 PM: 141/242 - 58.26%: Move: /sites/FilingCabinet/DropOff/33261.pdf
+2:50:16 PM:  -- File moved! (0.33s)
+2:50:16 PM: 142/242 - 58.68%: Move: /sites/FilingCabinet/DropOff/33262.pdf
+2:50:17 PM:  -- File moved! (0.39s)
+2:50:17 PM: 143/242 - 59.09%: Move: /sites/FilingCabinet/DropOff/33263.pdf
+2:50:17 PM:  -- File moved! (0.36s)
+2:50:17 PM: 144/242 - 59.5%: Move: /sites/FilingCabinet/DropOff/33282.pdf
+2:50:18 PM:  -- File moved! (0.33s)
+2:50:18 PM: 145/242 - 59.92%: Move: /sites/FilingCabinet/DropOff/33283.pdf
+2:50:18 PM:  -- File moved! (0.36s)
+2:50:18 PM: 146/242 - 60.33%: Move: /sites/FilingCabinet/DropOff/33293.pdf
+2:50:19 PM:  -- File moved! (0.47s)
+2:50:19 PM: 147/242 - 60.74%: Move: /sites/FilingCabinet/DropOff/33295.pdf
+2:50:20 PM:  -- File moved! (0.47s)
+2:50:20 PM: 148/242 - 61.16%: Move: /sites/FilingCabinet/DropOff/33296.pdf
+2:50:20 PM:  -- File moved! (0.49s)
+2:50:20 PM: 149/242 - 61.57%: Move: /sites/FilingCabinet/DropOff/33304.pdf
+2:50:21 PM:  -- File moved! (0.33s)
+2:50:21 PM: 150/242 - 61.98%: Move: /sites/FilingCabinet/DropOff/33334.pdf
+2:50:21 PM:  -- File moved! (0.4s)
+2:50:21 PM: 151/242 - 62.4%: Move: /sites/FilingCabinet/DropOff/33335.pdf
+2:50:22 PM:  -- File moved! (0.35s)
+2:50:22 PM: 152/242 - 62.81%: Move: /sites/FilingCabinet/DropOff/33336.pdf
+2:50:23 PM:  -- File moved! (0.43s)
+2:50:23 PM: 153/242 - 63.22%: Move: /sites/FilingCabinet/DropOff/33337.pdf
+2:50:23 PM:  -- File moved! (0.34s)
+2:50:23 PM: 154/242 - 63.64%: Move: /sites/FilingCabinet/DropOff/33338.pdf
+2:50:24 PM:  -- File moved! (0.49s)
+2:50:24 PM: 155/242 - 64.05%: Move: /sites/FilingCabinet/DropOff/33339.pdf
+2:50:24 PM:  -- File moved! (0.49s)
+2:50:24 PM: 156/242 - 64.46%: Move: /sites/FilingCabinet/DropOff/33342.pdf
+2:50:25 PM:  -- File moved! (0.49s)
+2:50:25 PM: 157/242 - 64.88%: Move: /sites/FilingCabinet/DropOff/33343.pdf
+2:50:26 PM:  -- File moved! (0.52s)
+2:50:26 PM: 158/242 - 65.29%: Move: /sites/FilingCabinet/DropOff/33344.pdf
+2:50:26 PM:  -- File moved! (0.51s)
+2:50:26 PM: 159/242 - 65.7%: Move: /sites/FilingCabinet/DropOff/33345.pdf
+2:50:27 PM:  -- File moved! (0.49s)
+2:50:27 PM: 160/242 - 66.12%: Move: /sites/FilingCabinet/DropOff/33346.pdf
+2:50:28 PM:  -- File moved! (0.48s)
+2:50:28 PM: 161/242 - 66.53%: Move: /sites/FilingCabinet/DropOff/33355.pdf
+2:50:28 PM:  -- File moved! (0.37s)
+2:50:28 PM: 162/242 - 66.94%: Move: /sites/FilingCabinet/DropOff/33398.pdf
+2:50:29 PM:  -- File moved! (0.33s)
+2:50:29 PM: 163/242 - 67.36%: Move: /sites/FilingCabinet/DropOff/33399.pdf
+2:50:30 PM:  -- File moved! (0.55s)
+2:50:30 PM: 164/242 - 67.77%: Move: /sites/FilingCabinet/DropOff/33400.pdf
+2:50:30 PM:  -- File moved! (0.38s)
+2:50:30 PM: 165/242 - 68.18%: Move: /sites/FilingCabinet/DropOff/33401.pdf
+2:50:31 PM:  -- File moved! (0.49s)
+2:50:31 PM: 166/242 - 68.6%: Move: /sites/FilingCabinet/DropOff/33402.pdf
+2:50:31 PM:  -- File moved! (0.53s)
+2:50:31 PM: 167/242 - 69.01%: Move: /sites/FilingCabinet/DropOff/33660.pdf
+2:50:32 PM:  -- File moved! (0.55s)
+2:50:32 PM: 168/242 - 69.42%: Move: /sites/FilingCabinet/DropOff/33665.pdf
+2:50:33 PM:  -- File moved! (0.74s)
+2:50:33 PM: 169/242 - 69.83%: Move: /sites/FilingCabinet/DropOff/33781.pdf
+2:50:34 PM:  -- File moved! (0.39s)
+2:50:34 PM: 170/242 - 70.25%: Move: /sites/FilingCabinet/DropOff/33919.pdf
+2:50:34 PM:  -- File moved! (0.5s)
+2:50:34 PM: 171/242 - 70.66%: Move: /sites/FilingCabinet/DropOff/34281.pdf
+2:50:35 PM:  -- File moved! (0.43s)
+2:50:35 PM: 172/242 - 71.07%: Move: /sites/FilingCabinet/DropOff/34282.pdf
+2:50:35 PM:  -- File moved! (0.33s)
+2:50:35 PM: 173/242 - 71.49%: Move: /sites/FilingCabinet/DropOff/34753.pdf
+2:50:36 PM:  -- File moved! (0.5s)
+2:50:36 PM: 174/242 - 71.9%: Move: /sites/FilingCabinet/DropOff/34754.pdf
+2:50:37 PM:  -- File moved! (0.53s)
+2:50:37 PM: 175/242 - 72.31%: Move: /sites/FilingCabinet/DropOff/34813.pdf
+2:50:37 PM:  -- File moved! (0.45s)
+2:50:37 PM: 176/242 - 72.73%: Move: /sites/FilingCabinet/DropOff/34814.pdf
+2:50:38 PM:  -- File moved! (0.48s)
+2:50:38 PM: 177/242 - 73.14%: Move: /sites/FilingCabinet/DropOff/35017.pdf
+2:50:39 PM:  -- File moved! (0.51s)
+2:50:39 PM: 178/242 - 73.55%: Move: /sites/FilingCabinet/DropOff/35043.pdf
+2:50:40 PM:  -- File moved! (0.64s)
+2:50:40 PM: 179/242 - 73.97%: Move: /sites/FilingCabinet/DropOff/35044.pdf
+2:50:40 PM:  -- File moved! (0.32s)
+2:50:40 PM: 180/242 - 74.38%: Move: /sites/FilingCabinet/DropOff/35047.pdf
+2:50:41 PM:  -- File moved! (0.48s)
+2:50:41 PM: 181/242 - 74.79%: Move: /sites/FilingCabinet/DropOff/35049.pdf
+2:50:41 PM:  -- File moved! (0.42s)
+2:50:41 PM: 182/242 - 75.21%: Move: /sites/FilingCabinet/DropOff/35075.pdf
+2:50:42 PM:  -- File moved! (0.5s)
+2:50:42 PM: 183/242 - 75.62%: Move: /sites/FilingCabinet/DropOff/35142.pdf
+2:50:43 PM:  -- File moved! (0.47s)
+2:50:43 PM: 184/242 - 76.03%: Move: /sites/FilingCabinet/DropOff/35144.pdf
+2:50:43 PM:  -- File moved! (0.52s)
+2:50:43 PM: 185/242 - 76.45%: Move: /sites/FilingCabinet/DropOff/35581.pdf
+2:50:44 PM:  -- File moved! (0.33s)
+2:50:44 PM: 186/242 - 76.86%: Move: /sites/FilingCabinet/DropOff/35582.pdf
+2:50:45 PM:  -- File moved! (0.34s)
+2:50:45 PM: 187/242 - 77.27%: Move: /sites/FilingCabinet/DropOff/35584.pdf
+2:50:45 PM:  -- File moved! (0.52s)
+2:50:45 PM: 188/242 - 77.69%: Move: /sites/FilingCabinet/DropOff/36077.pdf
+2:50:46 PM:  -- File moved! (0.45s)
+2:50:46 PM: 189/242 - 78.1%: Move: /sites/FilingCabinet/DropOff/36084.pdf
+2:50:46 PM:  -- File moved! (0.35s)
+2:50:46 PM: 190/242 - 78.51%: Move: /sites/FilingCabinet/DropOff/36085.pdf
+2:50:47 PM:  -- File moved! (0.36s)
+2:50:47 PM: 191/242 - 78.93%: Move: /sites/FilingCabinet/DropOff/36091.pdf
+2:50:49 PM:  -- File moved! (1.77s)
+2:50:49 PM: 192/242 - 79.34%: Move: /sites/FilingCabinet/DropOff/36092.pdf
+2:50:49 PM:  -- File moved! (0.5s)
+2:50:49 PM: 193/242 - 79.75%: Move: /sites/FilingCabinet/DropOff/36108.pdf
+2:50:50 PM:  -- File moved! (0.47s)
+2:50:50 PM: 194/242 - 80.17%: Move: /sites/FilingCabinet/DropOff/36126.pdf
+2:50:51 PM:  -- File moved! (0.36s)
+2:50:51 PM: 195/242 - 80.58%: Move: /sites/FilingCabinet/DropOff/36344.pdf
+2:50:51 PM:  -- File moved! (0.34s)
+2:50:51 PM: 196/242 - 80.99%: Move: /sites/FilingCabinet/DropOff/36345.pdf
+2:50:52 PM:  -- File moved! (0.45s)
+2:50:52 PM: 197/242 - 81.4%: Move: /sites/FilingCabinet/DropOff/36346.pdf
+2:50:53 PM:  -- File moved! (0.57s)
+2:50:53 PM: 198/242 - 81.82%: Move: /sites/FilingCabinet/DropOff/36393.pdf
+2:50:53 PM:  -- File moved! (0.59s)
+2:50:53 PM: 199/242 - 82.23%: Move: /sites/FilingCabinet/DropOff/36524.pdf
+2:50:54 PM:  -- File moved! (0.49s)
+2:50:54 PM: 200/242 - 82.64%: Move: /sites/FilingCabinet/DropOff/36525.pdf
+2:50:55 PM:  -- File moved! (0.5s)
+2:50:55 PM: 201/242 - 83.06%: Move: /sites/FilingCabinet/DropOff/36526.pdf
+2:50:55 PM:  -- File moved! (0.39s)
+2:50:55 PM: 202/242 - 83.47%: Move: /sites/FilingCabinet/DropOff/36588.pdf
+2:50:56 PM:  -- File moved! (0.32s)
+2:50:56 PM: 203/242 - 83.88%: Move: /sites/FilingCabinet/DropOff/36709.pdf
+2:50:57 PM:  -- File moved! (0.93s)
+2:50:57 PM: 204/242 - 84.3%: Move: /sites/FilingCabinet/DropOff/36740.pdf
+2:50:57 PM:  -- File moved! (0.49s)
+2:50:57 PM: 205/242 - 84.71%: Move: /sites/FilingCabinet/DropOff/36770.pdf
+2:50:58 PM:  -- File moved! (0.53s)
+2:50:58 PM: 206/242 - 85.12%: Move: /sites/FilingCabinet/DropOff/36771.pdf
+2:50:59 PM:  -- File moved! (0.53s)
+2:50:59 PM: 207/242 - 85.54%: Move: /sites/FilingCabinet/DropOff/36772.pdf
+2:51:00 PM:  -- File moved! (0.5s)
+2:51:00 PM: 208/242 - 85.95%: Move: /sites/FilingCabinet/DropOff/36863.pdf
+2:51:00 PM:  -- File moved! (0.51s)
+2:51:00 PM: 209/242 - 86.36%: Move: /sites/FilingCabinet/DropOff/36949.pdf
+2:51:01 PM:  -- File moved! (0.52s)
+2:51:01 PM: 210/242 - 86.78%: Move: /sites/FilingCabinet/DropOff/36987.pdf
+2:51:02 PM:  -- File moved! (0.51s)
+2:51:02 PM: 211/242 - 87.19%: Move: /sites/FilingCabinet/DropOff/36992.pdf
+2:51:02 PM:  -- File moved! (0.33s)
+2:51:02 PM: 212/242 - 87.6%: Move: /sites/FilingCabinet/DropOff/37559.pdf
+2:51:03 PM:  -- File moved! (0.38s)
+2:51:03 PM: 213/242 - 88.02%: Move: /sites/FilingCabinet/DropOff/38183.pdf
+2:51:03 PM:  -- File moved! (0.35s)
+2:51:03 PM: 214/242 - 88.43%: Move: /sites/FilingCabinet/DropOff/38294.pdf
+2:51:04 PM:  -- File moved! (0.33s)
+2:51:04 PM: 215/242 - 88.84%: Move: /sites/FilingCabinet/DropOff/38400.pdf
+2:51:04 PM:  -- File moved! (0.5s)
+2:51:04 PM: 216/242 - 89.26%: Move: /sites/FilingCabinet/DropOff/38637.pdf
+2:51:05 PM:  -- File moved! (0.41s)
+2:51:05 PM: 217/242 - 89.67%: Move: /sites/FilingCabinet/DropOff/38958.pdf
+2:51:05 PM:  -- File moved! (0.34s)
+2:51:05 PM: 218/242 - 90.08%: Move: /sites/FilingCabinet/DropOff/38959.pdf
+2:51:06 PM:  -- File moved! (0.36s)
+2:51:06 PM: 219/242 - 90.5%: Move: /sites/FilingCabinet/DropOff/38960.pdf
+2:51:07 PM:  -- File moved! (0.5s)
+2:51:07 PM: 220/242 - 90.91%: Move: /sites/FilingCabinet/DropOff/38962.pdf
+2:51:07 PM:  -- File moved! (0.52s)
+2:51:07 PM: 221/242 - 91.32%: Move: /sites/FilingCabinet/DropOff/41471.pdf
+2:51:08 PM:  -- File moved! (0.5s)
+2:51:08 PM: 222/242 - 91.74%: Move: /sites/FilingCabinet/DropOff/41472.pdf
+2:51:09 PM:  -- File moved! (0.55s)
+2:51:09 PM: 223/242 - 92.15%: Move: /sites/FilingCabinet/DropOff/43130.pdf
+2:51:09 PM:  -- File moved! (0.42s)
+2:51:09 PM: 224/242 - 92.56%: Move: /sites/FilingCabinet/DropOff/43131.pdf
+2:51:10 PM:  -- File moved! (0.5s)
+2:51:10 PM: 225/242 - 92.98%: Move: /sites/FilingCabinet/DropOff/43132.pdf
+2:51:11 PM:  -- File moved! (0.54s)
+2:51:11 PM: 226/242 - 93.39%: Move: /sites/FilingCabinet/DropOff/43134.pdf
+2:51:12 PM:  -- File moved! (0.74s)
+2:51:12 PM: 227/242 - 93.8%: Move: /sites/FilingCabinet/DropOff/43135.pdf
+2:51:12 PM:  -- File moved! (0.51s)
+2:51:12 PM: 228/242 - 94.21%: Move: /sites/FilingCabinet/DropOff/43136.pdf
+2:51:13 PM:  -- File moved! (0.46s)
+2:51:13 PM: 229/242 - 94.63%: Move: /sites/FilingCabinet/DropOff/43237.pdf
+2:51:14 PM:  -- File moved! (0.35s)
+2:51:14 PM: 230/242 - 95.04%: Move: /sites/FilingCabinet/DropOff/46001.pdf
+2:51:14 PM:  -- File moved! (0.47s)
+2:51:14 PM: 231/242 - 95.45%: Move: /sites/FilingCabinet/DropOff/accounting01117.txt
+2:51:15 PM:  -- File moved! (0.41s)
+2:51:15 PM: 232/242 - 95.87%: Move: /sites/FilingCabinet/DropOff/16094.pdf
+2:51:15 PM:  -- File moved! (0.34s)
+2:51:15 PM: 233/242 - 96.28%: Move: /sites/FilingCabinet/DropOff/16101.pdf
+2:51:16 PM:  -- File moved! (0.42s)
+2:51:16 PM: 234/242 - 96.69%: Move: /sites/FilingCabinet/DropOff/16185.msg
+2:51:17 PM:  -- File moved! (0.96s)
+2:51:17 PM: 235/242 - 97.11%: Move: /sites/FilingCabinet/DropOff/16186.msg
+2:51:18 PM:  -- File moved! (1.25s)
+2:51:18 PM: 236/242 - 97.52%: Move: /sites/FilingCabinet/DropOff/16585.pdf
+2:51:19 PM:  -- File moved! (0.5s)
+2:51:19 PM: 237/242 - 97.93%: Move: /sites/FilingCabinet/DropOff/16986.pdf
+2:51:20 PM:  -- File moved! (0.52s)
+2:51:20 PM: 238/242 - 98.35%: Move: /sites/FilingCabinet/DropOff/17047.pdf
+2:51:21 PM:  -- File moved! (0.66s)
+2:51:21 PM: 239/242 - 98.76%: Move: /sites/FilingCabinet/DropOff/17048.pdf
+2:51:21 PM:  -- File moved! (0.44s)
+2:51:21 PM: 240/242 - 99.17%: Move: /sites/FilingCabinet/DropOff/17050.pdf
+2:51:22 PM:  -- File moved! (0.34s)
+2:51:22 PM: 241/242 - 99.59%: Move: /sites/FilingCabinet/DropOff/17052.pdf
+2:51:22 PM:  -- File moved! (0.35s)
+2:51:22 PM: 242/242 - 100%: Move: /sites/FilingCabinet/DropOff/17059.pdf
+2:51:23 PM:  -- File moved! (0.33s)
+2:51:23 PM: Finished move files to destination.
+
+[EOF]
